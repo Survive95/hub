@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+  --backgroundColor: linear-gradient(to left, #243B55, #141E30);
+  --overlayBackground:#ffffff10;
+  --overlayHover:#ffffff1f;
+  --fontColor:#fff;
+  --clockColor:#fff;
+  --mode:rgba(255, 255, 255, 0.603);
+}
+
+html[theme="white"]{
+  --backgroundColor: linear-gradient(to right, #b9bfcf, #eeeef0);
+  --overlayBackground:#403c4d3d;
+  --overlayHover:#8784913d;
+  --fontColor:rgb(0, 0, 0);
+  --clockColor:#1d1d1d;
+  --mode:rgba(109, 103, 103, 0.459);
+}
+
+body{
+  padding: 60px;
+  background: var(--backgroundColor);
+  height: 100vh;
+}
+
+.main_app{
+  background-color: transparent;
+}
+
+.title{
+  color: var(--fontColor);
+  margin-bottom: 20px;
+}

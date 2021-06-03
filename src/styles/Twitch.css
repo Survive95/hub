@@ -1,0 +1,48 @@
+.twitch_container{
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--overlayHover);
+}
+
+.streamer_list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    list-style: none;
+}
+
+.streamer_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--overlayBackground);
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.streamer_image{
+    width: 90px;
+    border-radius: 1000px;
+}
+
+.streamer_name{
+    color:  var(--fontColor);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.streamer_game{
+    color: var(--fontColor);
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.streamer_item:hover{
+    background-color: var(--overlayHover);
+    transform: scale(1.03);
+}
